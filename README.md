@@ -14,9 +14,9 @@ A simple and secure php login framework with data-filtering and encryption using
 Until we reach [version 1.0](https://github.com/JasperDre/Simple-and-secure-accounts/milestones) the module won't have an interface or full security. However, most features are currently supported or at least partially implemented.
 
 The default user from `sql/secure_accounts.sql` contains these values:
-- Username	: `test`
-- Email	: `test@test.com`
-- Password	: `eKcGZr59zAa2BEWU`
+- Username	: `testuser`
+- Email	: `tester@test.com`
+- Password	: `Test123`
 
 ### Prerequisites
 Name | Description | Version
