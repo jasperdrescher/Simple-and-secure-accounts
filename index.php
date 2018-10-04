@@ -25,7 +25,7 @@ else
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="icon.png">
+        <link rel="shortcut icon" href="images/icon.png">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -50,10 +50,10 @@ else
 
         <div class="grid-container">
             <div class="grid-item">
-                <form class="medium-form center" action="includes/process_login.php" method="post" name="login_form"> 			
-                    Email: <input type="text" name="email" />
-                    Password: <input type="password" name="password" id="password"/>
-                    <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
+                <form class="medium-form center" action="includes/process_login.php" method="post" name="login_form">
+                    Email: <input type="text" name="email">
+                    Password: <input type="password" name="password" id="password">
+                    <input type="button" value="Login" onclick="formhash(this.form, this.form.password);">
                 </form>
             </div>
             <div class="grid-item">

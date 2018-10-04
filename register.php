@@ -14,7 +14,7 @@ include_once 'includes/functions.php';
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="icon.png">
+        <link rel="shortcut icon" href="images/icon.png">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

@@ -16,7 +16,7 @@ sec_session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="icon.png">
+        <link rel="shortcut icon" href="images/icon.png">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -27,10 +27,6 @@ sec_session_start();
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="css/normalize.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css" />
-
-        <!-- JS -->
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
         <div class="grid-container">
