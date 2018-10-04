@@ -53,7 +53,7 @@ function login($email, $password, $mysqli)
             else
             {
                 // Check if the password in the database matches the password the user submitted.
-                if ($db_password == $password)
+                if (password_verify($password, $db_password))
                 {
                     // Password is correct.
                     // Get the user-agent string of the user.
