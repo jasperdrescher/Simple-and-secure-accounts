@@ -57,15 +57,18 @@ else
                 </form>
             </div>
             <div class="grid-item">
-                <p>If you don't have a login, please <a href="register.php">register</a></p>
-                <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-                <p>You are currently logged <?php echo $logged ?> 
-                <?php 
-                if (login_check($mysqli) == true)
-                {
-                    echo ' as ' . htmlentities($_SESSION['username']);
-                }
-                ?>.</p>
+                <?php
+                    if (login_check($mysqli) == true)
+                    {
+                        echo '<p>Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.</p>';
+                        echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
+                    }
+                    else
+                    {
+                        echo '<p>Currently logged ' . $logged . '.</p>';
+                        echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
+                    }
+                ?>
             </div>
         </div>
     </body>

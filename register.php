@@ -59,7 +59,7 @@ include_once 'includes/functions.php';
                 </ul>
             </div>
             <div class="grid-item">
-                <form class="medium-form center" method="post" name="registration_form" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>">
+                <form class="medium-form center" method="post" name="registration_form" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
                     Username: <input type='text' name='username' id='username' /><br>
                     Email: <input type="text" name="email" id="email" /><br>
                     Password: <input type="password" name="password" id="password"/><br>

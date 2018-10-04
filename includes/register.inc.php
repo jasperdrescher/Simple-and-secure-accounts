@@ -3,6 +3,7 @@ include_once 'db_connect.php';
 include_once 'psl-config.php';
 
 $error_msg = "";
+
 if (isset($_POST['username'], $_POST['email'], $_POST['p']))
 {
     // Sanitize and validate the data passed in.
@@ -50,25 +51,22 @@ if (isset($_POST['username'], $_POST['email'], $_POST['p']))
     // TODO: We'll also have to account for the situation where the user doesn't have rights to do registration, by checking what type of user is attempting to perform the operation.
     if (empty($error_msg))
     {
-        // Create a random salt.
-        $random_salt = hash('sha512', uniqid(openssl_random_pseudo_bytes(16), TRUE));
-
-        // Create salted password.
-        $password = hash('sha512', $password . $random_salt);
-
-        // Insert the new user into the database.
-        if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email, password, salt) VALUES (?, ?, ?, ?)"))
+        // Create hashed password using the password_hash function.
+        // This function salts it with a random salt and can be verified with the password_verify function.
+        $password = password_hash($password, PASSWORD_BCRYPT);
+ 
+        // Insert the new user into the database 
+        if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email, password) VALUES (?, ?, ?)"))
         {
-            $insert_stmt->bind_param('ssss', $username, $email, $password, $random_salt);
+            $insert_stmt->bind_param('sss', $username, $email, $password);
 
             // Execute the prepared query.
             if (! $insert_stmt->execute())
             {
                 header('Location: ../error.php?err=Registration failure: INSERT');
-                exit();
             }
         }
-        header('Location: ./register_success.html');
+        header('Location: ./register_success.php');
         exit();
     }
 }

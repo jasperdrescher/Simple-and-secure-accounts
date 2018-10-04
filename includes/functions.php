@@ -10,7 +10,7 @@ function sec_session_start()
     $httponly = true;
 
     // Forces sessions to only use cookies.
-    if (ini_set('session.use_only_cookies', 1) === FALSE)
+    if (ini_set('session.use_only_cookies', 1) === false)
     {
         header("Location: ../error.php?err=Could not initiate a safe session (ini_set)");
         exit();
@@ -29,18 +29,16 @@ function sec_session_start()
 function login($email, $password, $mysqli)
 {
     // Using prepared statements means that SQL injection is not possible. 
-    if ($stmt = $mysqli->prepare("SELECT id, username, password, salt FROM members WHERE email = ? LIMIT 1"))
+    if ($stmt = $mysqli->prepare("SELECT id, username, password FROM members WHERE email = ? LIMIT 1"))
     {
         $stmt->bind_param('s', $email); // Bind "$email" to parameter.
         $stmt->execute();               // Execute the prepared query.
         $stmt->store_result();
 
         // Get variables from result.
-        $stmt->bind_result($user_id, $username, $db_password, $salt);
+        $stmt->bind_result($user_id, $username, $db_password);
         $stmt->fetch();
 
-        // Hash the password with the unique salt.
-        $password = hash('sha512', $password . $salt);
         if ($stmt->num_rows == 1)
         {
             // If the user exists check if the account is locked from too many login attempts .
@@ -66,7 +64,7 @@ function login($email, $password, $mysqli)
                     // XSS protection might print this value.
                     $username = preg_replace("/[^a-zA-Z0-9_\-]+/", "", $username);
                     $_SESSION['username'] = $username;
-                    $_SESSION['login_string'] = hash('sha512', $password . $user_browser);
+                    $_SESSION['login_string'] = hash('sha512', $db_password  . $user_browser);
 
                     // Login successful. 
                     return true;
@@ -158,7 +156,7 @@ function login_check($mysqli)
                 $stmt->fetch();
                 $login_check = hash('sha512', $password . $user_browser);
 
-                if ($login_check == $login_string)
+                if (hash_equals($login_check, $login_string))
                 {
                     // Logged in.
                     return true;
