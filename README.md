@@ -32,22 +32,27 @@ Name | Description | Version
 - Run `sql/secure_accounts.sql` or add the structure to your MySQL database.
 
 ### Features
-- [ ] Setup interface.
-- [x] User login.
-- [x] User registration.
-- [ ] Account page.
-- [ ] Profile picture.
-- [ ] Password reset.
-- [ ] E-mail change.
-- [x] Hidden pages.
-- [x] Hidden content.
-- [ ] Rank-based access.
-- [ ] Ranks/access levels.
-- [x] Protection against SQL injection.
-- [x] Protection against session hijacking.
-- [x] Protection against brute-force attacks.
-- [x] Protection against XSS.
-- [x] Protection aginst covert timing channel attacks.
+- Setup interface.
+    - [ ] Run and modify SQL query
+    - [ ] Modify settings
+- Users
+    - [x] Log in
+    - [x] Register
+    - [x] Log out
+    - [ ] Profile
+        - [ ] Picture
+        - [ ] Password reset
+        - [ ] E-mail change
+    - [ ] Permissions
+        - [x] Hidden pages
+        - [x] Hidden content
+        - [ ] Access based on level
+- Protection
+    - [x] SQL injection
+    - [x] Session hijacking
+    - [x] Brute-force attacks
+    - [x] XSS
+    - [x] Covert timing channel attacks
     
 ## References
 [SQL injection](https://www.w3schools.com/sql/sql_injection.asp)
