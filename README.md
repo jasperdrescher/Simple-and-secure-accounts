@@ -32,12 +32,15 @@ Name | Description | Version
 - [ ] Setup interface.
 - [ ] User login.
 - [ ] User registration.
+- [ ] Account page.
+- [ ] Password reset.
+- [ ] E-mail change.
 - [x] Hidden pages.
 - [x] Hidden content.
 - [ ] Rank-based access.
 - [ ] Ranks/access levels.
-- [ ] Protection against SQL injection.
-- [ ] Protection against session hijacking.
+- [x] Protection against SQL injection.
+- [x] Protection against session hijacking.
 - [ ] Protection against brute-force attacks.
 - [x] Protection against XSS.
 - [x] Protection aginst covert timing channel attacks.
