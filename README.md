@@ -31,8 +31,8 @@ Name | Description | Version
 
 ### Features
 - [ ] Setup interface.
-- [ ] User login.
-- [ ] User registration.
+- [x] User login.
+- [x] User registration.
 - [ ] Account page.
 - [ ] Password reset.
 - [ ] E-mail change.
@@ -42,7 +42,7 @@ Name | Description | Version
 - [ ] Ranks/access levels.
 - [x] Protection against SQL injection.
 - [x] Protection against session hijacking.
-- [ ] Protection against brute-force attacks.
+- [x] Protection against brute-force attacks.
 - [x] Protection against XSS.
 - [x] Protection aginst covert timing channel attacks.
     
