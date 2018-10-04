@@ -10,13 +10,13 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Create database `secure_login`
+-- Create database `secure_accounts`
 --
 
-CREATE DATABASE IF NOT EXISTS `secure_login`;
+CREATE DATABASE IF NOT EXISTS `secure_accounts`;
 
 --
--- Database: `secure_login`
+-- Database: `secure_accounts`
 --
 
 -- --------------------------------------------------------
