@@ -26,8 +26,8 @@ Name | Description | Version
 [MySQL](https://www.apachefriends.org/index.html) | MySQL is an open-source relational database management system. | Any
 
 ### Steps
-- Change the variables in `includes/psl-config.php` to match your own MySQL database connection.
-- Run `sql/secure_accounts.sql` or at it to your MySQL database.
+- Change the variables in `includes/psl-config.php` to match your MySQL database connection.
+- Run `sql/secure_accounts.sql` or add the structure to your MySQL database.
 
 ### Features
 - [ ] Setup interface.
