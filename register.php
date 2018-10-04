@@ -33,8 +33,7 @@ include_once 'includes/functions.php';
     <body>
         <div class="grid-container">
             <div class="grid-item">
-                <!-- Registration form to be output if the POST variables are not
-                set or if the registration script caused an error. -->
+                <!-- Registration form to be output if the POST variables are not set or if the registration script caused an error. -->
                 <h1>Register with us</h1>
                 <?php
                 if (!empty($error_msg))
@@ -59,13 +58,16 @@ include_once 'includes/functions.php';
                 </ul>
             </div>
             <div class="grid-item">
-                <form class="medium-form center" method="post" name="registration_form" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-                    Username: <input type='text' name='username' id='username' /><br>
-                    Email: <input type="text" name="email" id="email" /><br>
-                    Password: <input type="password" name="password" id="password"/><br>
-                    Confirm password: <input type="password" name="confirmpwd" id="confirmpwd" /><br>
-                    <input type="button" value="Register" onclick="return regformhash(this.form, this.form.username, this.form.email, this.form.password, this.form.confirmpwd);" /> 
-                </form>
+                <div class="box s2 center">
+                    <h3>Register</h3>
+                    <form method="post" name="registration_form" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+                        <input type='text' name='username' id='username' placeholder="Username" required autofocus>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm password" required>
+                        <input type="submit" value="Register" onclick="return regformhash(this.form, this.form.username, this.form.email, this.form.password, this.form.confirmpwd);"> 
+                    </form>
+                </div>
                 <p>Return to the <a href="index.php">login page</a>.</p>
             </div>
         </div>

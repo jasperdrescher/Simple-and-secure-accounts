@@ -50,11 +50,15 @@ else
 
         <div class="grid-container">
             <div class="grid-item">
-                <form class="medium-form center" action="includes/process_login.php" method="post" name="login_form">
-                    Email: <input type="text" name="email">
-                    Password: <input type="password" name="password" id="password">
-                    <input type="button" value="Login" onclick="formhash(this.form, this.form.password);">
-                </form>
+                <div class="box s2 center">
+                    <h3>Log in</h3>
+                    <form action="includes/process_login.php" method="post" name="login_form">
+                        <input type="email" name="email" placeholder="Email" maxlength="50" required autofocus>
+                        <input type="password" name="password" id="password" placeholder="Password" maxlength="128" required>
+                        <span>Remember me </span><input type="checkbox" name="remember" id="remember" value="Remember me" disabled>
+                        <input type="submit" value="Login" onclick="formhash(this.form, this.form.password);">
+                    </form>
+                </div>
             </div>
             <div class="grid-item">
                 <?php
