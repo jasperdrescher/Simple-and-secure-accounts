@@ -12,5 +12,5 @@ CREATE TABLE `secure_accounts`.`members` (
     `password` CHAR(128) NOT NULL
 ) ENGINE = InnoDB;
 
-INSERT INTO `secure_accounts`.`members` VALUES(1, 'test', 'test@test.com',
-'$2y$10$IrzYJi10j3Jy/K6jzSLQtOLif1wEZqTRQoK3DcS3jdnFEhL4fWM4G');
+INSERT INTO `secure_accounts`.`members` VALUES(1, 'testuser', 'tester@test.com',
+'$2y$10$bE9nfr53i6J1jjLWw9Kp1.K1a9I/UQGwCOIgOSKsTlBT4jZOtwlNm');
