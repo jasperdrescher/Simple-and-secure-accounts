@@ -3,12 +3,15 @@ A simple and secure php login framework with data-filtering and encryption using
 
 ## Table of contents
 - [Usage](#usage)
-    - [prerequisites](#prerequisites)
-    - [steps](#steps)
-- [references](#references)
+    - [Prerequisites](#prerequisites)
+    - [Steps](#steps)
+- [Features](#features)
+- [References](#references)
 - [License](#license)
 
 ## Usage
+Until we reach [version 1.0](https://github.com/JasperDre/Simple-and-secure-accounts/milestone/1) the module won't have an interface or full security. However, most features are currently supported or at least partially implemented.
+
 The default user from `sql/secure_accounts.sql` contains these values:
 - Username	: `test_user`
 - Email	: `test@test.com`
@@ -17,13 +20,27 @@ The default user from `sql/secure_accounts.sql` contains these values:
 ### Prerequisites
 Name | Description | Version
 ------------ | ------------- | -------------
-[Apache](https://www.apachefriends.org/index.html) | The Apache HTTP Server is a free and open-source cross-platform web server. | Windows 32 or 64 bit
-[PHP](https://www.apachefriends.org/index.html) |  Hypertext Preprocessor is a server-side scripting language designed for Web development. | PHP 5.3 or newer
-[MySQL](https://www.apachefriends.org/index.html) | MySQL is an open-source relational database management system.. | Any
+[Apache](https://www.apachefriends.org/index.html) | The Apache HTTP Server is a free and open-source cross-platform web server. | Any
+[PHP](https://www.apachefriends.org/index.html) |  Hypertext Preprocessor is a server-side scripting language designed for web development. | PHP 5.3 or newer
+[MySQL](https://www.apachefriends.org/index.html) | MySQL is an open-source relational database management system. | Any
 
 ### Steps
 - Change the variables in `includes/psl-config.php` to match your own MySQL database connection.
 - Run `sql/secure_accounts.sql` or at it to your MySQL database.
+
+### Features
+- [ ] Setup interface.
+- [ ] User login.
+- [ ] User registration.
+- [x] Hidden pages.
+- [x] Hidden content.
+- [ ] Rank-based access.
+- [ ] Ranks/access levels.
+- [ ] Protection against SQL injection.
+- [ ] Protection against session hijacking.
+- [ ] Protection against brute-force attacks.
+- [x] Protection against XSS.
+- [x] Protection aginst covert timing channel attacks.
     
 ## References
 [SQL injection](https://www.w3schools.com/sql/sql_injection.asp)
