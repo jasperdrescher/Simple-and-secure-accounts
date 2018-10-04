@@ -26,7 +26,11 @@
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
-        <h1>Registration successful!</h1>
-        <p>You can now go back to the <a href="index.php">login page</a> and log in</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1>Registration successful!</h1>
+                <p>You can now go back to the <a href="index.php">login page</a> and log in</p>
+            </div>
+        </div>
     </body>
 </html>

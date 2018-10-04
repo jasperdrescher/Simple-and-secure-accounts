@@ -31,7 +31,7 @@ else
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="css/normalize.css" />
@@ -46,18 +46,21 @@ else
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
         }
-        ?> 
-        <form action="includes/process_login.php" method="post" name="login_form"> 			
-            Email: <input type="text" name="email" />
-            Password: <input type="password" 
-                             name="password" 
-                             id="password"/>
-            <input type="button" 
-                   value="Login" 
-                   onclick="formhash(this.form, this.form.password);" /> 
-        </form>
-        <p>If you don't have a login, please <a href="register.php">register</a></p>
-        <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-        <p>You are currently logged <?php echo $logged ?>.</p>
+        ?>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <form class="medium-form center" action="includes/process_login.php" method="post" name="login_form"> 			
+                    Email: <input type="text" name="email" />
+                    Password: <input type="password" name="password" id="password"/>
+                    <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
+                </form>
+            </div>
+            <div class="grid-item">
+                <p>If you don't have a login, please <a href="register.php">register</a></p>
+                <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
+                <p>You are currently logged <?php echo $logged ?>.</p>
+            </div>
+        </div>
     </body>
 </html>

@@ -34,7 +34,11 @@ if (! $error)
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
-        <h1>There was a problem</h1>
-        <p class="error"><?php echo $error; ?></p>  
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1>There was a problem</h1>
+                <p class="error"><?php echo $error; ?></p>
+            </div>
+        </div>
     </body>
 </html>
