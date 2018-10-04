@@ -17,8 +17,9 @@ The default user from `sql/secure_accounts.sql` contains these values:
 ### Prerequisites
 Name | Description | Version
 ------------ | ------------- | -------------
-[cURL](https://curl.haxx.se/) | Curl is used in command lines or scripts to transfer data. | Windows 32 or 64 bit
-[Java](https://www.oracle.com/technetwork/java/javase/overview/index.html) | Java lets you develop and deploy Java applications on desktops and servers. | JDK and JRE 8 or newer
+[Apache](https://www.apachefriends.org/index.html) | The Apache HTTP Server is a free and open-source cross-platform web server. | Windows 32 or 64 bit
+[PHP](https://www.apachefriends.org/index.html) |  Hypertext Preprocessor is a server-side scripting language designed for Web development. | PHP 5.3 or newer
+[MySQL](https://www.apachefriends.org/index.html) | MySQL is an open-source relational database management system.. | Any
 
 ### Steps
 - Change the variables in `includes/psl-config.php` to match your own MySQL database connection.
