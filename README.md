@@ -10,7 +10,7 @@ A simple and secure php login framework with data-filtering and encryption using
 - [License](#license)
 
 ## Usage
-Until we reach [version 1.0](https://github.com/JasperDre/Simple-and-secure-accounts/milestone/1) the module won't have an interface or full security. However, most features are currently supported or at least partially implemented.
+Until we reach [version 1.0](https://github.com/JasperDre/Simple-and-secure-accounts/milestones) the module won't have an interface or full security. However, most features are currently supported or at least partially implemented.
 
 The default user from `sql/secure_accounts.sql` contains these values:
 - Username	: `test_user`
