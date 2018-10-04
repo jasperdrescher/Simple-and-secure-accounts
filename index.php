@@ -59,7 +59,13 @@ else
             <div class="grid-item">
                 <p>If you don't have a login, please <a href="register.php">register</a></p>
                 <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-                <p>You are currently logged <?php echo $logged ?>.</p>
+                <p>You are currently logged <?php echo $logged ?> 
+                <?php 
+                if (login_check($mysqli) == true)
+                {
+                    echo ' as ' . htmlentities($_SESSION['username']);
+                }
+                ?>.</p>
             </div>
         </div>
     </body>

@@ -1,3 +1,7 @@
+<?php
+    header( "refresh:5;url=index.php" );
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
