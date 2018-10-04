@@ -10,9 +10,9 @@ A simple and secure php login framework with data-filtering and encryption using
 
 ## Usage
 The default user from `sql/secure_accounts.sql` contains these values:
-- Username	: test_user 
-- Email	: test@test.com 
-- Password	: 6ZaxN2Vzm9NUJT2y
+- Username	: `test_user`
+- Email	: `test@test.com`
+- Password	: `6ZaxN2Vzm9NUJT2y`
 
 ### Prerequisites
 Name | Description | Version
