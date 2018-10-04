@@ -34,6 +34,7 @@ Name | Description | Version
 - [x] User login.
 - [x] User registration.
 - [ ] Account page.
+- [ ] Profile picture.
 - [ ] Password reset.
 - [ ] E-mail change.
 - [x] Hidden pages.
