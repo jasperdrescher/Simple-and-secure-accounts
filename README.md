@@ -7,6 +7,7 @@ A simple and secure php login framework with data-filtering and encryption using
     - [Steps](#steps)
 - [Features](#features)
 - [References](#references)
+- [Contributors](#contributors)
 - [License](#license)
 
 ## Usage
@@ -55,6 +56,9 @@ Name | Description | Version
 [Cross-site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
 
 [Covert Timing Channel](https://cwe.mitre.org/data/definitions/385.html)
+
+## Contributors
+- [xdxdxdxdxdxdxdxdxd](https://github.com/JasperDre/Simple-and-secure-accounts/issues/created_by/xdxdxdxdxdxdxdxdxd)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/JasperDre/Simple-and-secure-accounts/blob/master/LICENSE.md).
