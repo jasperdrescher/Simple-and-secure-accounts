@@ -26,9 +26,15 @@ Name | Description | Version
 - Run `sql/secure_accounts.sql` or at it to your MySQL database.
     
 ## References
-[Simple instructions to build CraftBukkit and Spigot](https://www.spigotmc.org/wiki/buildtools/)
+[SQL injection](https://www.w3schools.com/sql/sql_injection.asp)
 
-[A guide to installing a Spigot server](https://www.spigotmc.org/wiki/spigot-installation/)
+[Session hijacking](https://www.owasp.org/index.php/Session_hijacking_attack)
+
+[Brute-force attack](https://en.wikipedia.org/wiki/Brute-force_attack)
+
+[Cross-site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
+
+[Covert Timing Channel](https://cwe.mitre.org/data/definitions/385.html)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/JasperDre/Simple-and-secure-accounts/blob/master/LICENSE.md).
