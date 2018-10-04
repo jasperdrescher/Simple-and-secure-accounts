@@ -3,14 +3,32 @@ include_once 'includes/register.inc.php';
 include_once 'includes/functions.php';
 ?>
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Secure Login: Registration Form</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Secure Accounts: Register</title>
+        <meta name="description" content="A simple and modern php login framework with data-filtering and encryption.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="icon.png">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+        <!-- JS -->
         <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script>
-        <link rel="stylesheet" href="styles/main.css" />
+        <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
         <!-- Registration form to be output if the POST variables are not
