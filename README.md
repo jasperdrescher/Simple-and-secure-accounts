@@ -67,7 +67,7 @@ Name | Description | Version
 [Covert Timing Channel](https://cwe.mitre.org/data/definitions/385.html)
 
 ## Contributors
-- [xdxdxdxdxdxdxdxdxd](https://github.com/JasperDre/Simple-and-secure-accounts/issues?utf8=%E2%9C%93&q=author%3Axdxdxdxdxdxdxdxdxd)
+- [Fly-d-e-v](https://github.com/JasperDre/Simple-and-secure-accounts/issues?utf8=%E2%9C%93&q=author%3AFly-d-e-v)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/JasperDre/Simple-and-secure-accounts/blob/master/LICENSE.md).
