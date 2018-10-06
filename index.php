@@ -25,7 +25,7 @@ else
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="images/icon.png">
+        <link rel="shortcut icon" href="images/icons/icon.png">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -34,11 +34,11 @@ else
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 
         <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="css/vendor/normalize.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css" />
 
         <!-- JS -->
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
+        <script type="text/JavaScript" src="js/vendor/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>

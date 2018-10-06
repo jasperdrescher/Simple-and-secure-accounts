@@ -16,7 +16,7 @@ sec_session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="images/icon.png">
+        <link rel="shortcut icon" href="images/icons/icon.png">
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -25,7 +25,7 @@ sec_session_start();
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
         <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="css/vendor/normalize.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css" />
     </head>
     <body>
