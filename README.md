@@ -1,4 +1,4 @@
-<a href="https://github.com/JasperDre/Simple-and-secure-accounts"><img src="images/icon.png" align="right" width="120" height="120" alt="Secure Accounts" title="Secure Accounts"></a>
+<a href="https://github.com/JasperDre/Simple-and-secure-accounts"><img src="images/icons/icon.png" align="right" width="120" height="120" alt="Secure Accounts" title="Secure Accounts"></a>
 
 # Simple-and-secure-accounts
 A simple and secure php login framework with data-filtering and encryption using modern techniques.
