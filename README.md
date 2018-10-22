@@ -37,6 +37,7 @@ Name | Description | Version
     - [ ] Modify settings
 - Users
     - [x] Log in
+    - [ ] Two-factor authentication
     - [ ] Remember
     - [x] Register
     - [x] Log out
