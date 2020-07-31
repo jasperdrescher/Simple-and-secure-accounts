@@ -1,6 +1,6 @@
 <?php
-include_once 'includes/register.inc.php';
-include_once 'includes/functions.php';
+    include_once 'includes/register.inc.php';
+    include_once 'includes/functions.php';
 ?>
 
 <!doctype html>
@@ -31,45 +31,54 @@ include_once 'includes/functions.php';
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
-        <div class="grid-container">
-            <div class="grid-item">
-                <!-- Registration form to be output if the POST variables are not set or if the registration script caused an error. -->
-                <h1>Register with us</h1>
-                <?php
-                if (!empty($error_msg))
-                {
-                    echo $error_msg;
-                }
-                ?>
-            </div>
-            <div class="grid-item">
-                <ul class="center">
-                    <li>Usernames may contain only digits, upper and lower case letters and underscores</li>
-                    <li>Emails must have a valid email format</li>
-                    <li>Passwords must be at least 6 characters long</li>
-                    <li>Passwords must contain
-                        <ul>
-                            <li>At least one upper case letter (A..Z)</li>
-                            <li>At least one lower case letter (a..z)</li>
-                            <li>At least one number (0..9)</li>
-                        </ul>
-                    </li>
-                    <li>Your password and confirmation must match exactly</li>
+        <!-- Registration form to be output if the POST variables are not set or if the registration script caused an error. -->
+        <h1>Register with us</h1>
+        <?php
+            if (!empty($error_msg))
+            {
+                echo $error_msg;
+            }
+        ?>
+        <ul class="center">
+            <li>Usernames may contain only digits, upper and lower case letters and underscores</li>
+            <li>Emails must have a valid email format</li>
+            <li>Passwords must be at least 6 characters long</li>
+            <li>Passwords must contain
+                <ul>
+                    <li>At least one upper case letter (A..Z)</li>
+                    <li>At least one lower case letter (a..z)</li>
+                    <li>At least one number (0..9)</li>
                 </ul>
-            </div>
-            <div class="grid-item">
-                <div class="box s2 center">
-                    <h3>Register</h3>
-                    <form method="post" name="registration_form" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-                        <input type='text' name='username' id='username' placeholder="Username" required autofocus>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                        <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm password" required>
-                        <input type="submit" value="Register" onclick="return regformhash(this.form, this.form.username, this.form.email, this.form.password, this.form.confirmpwd);"> 
-                    </form>
-                </div>
-                <p>Return to the <a href="index.php">login page</a>.</p>
-            </div>
-        </div>
+            </li>
+            <li>Your password and confirmation must match exactly</li>
+        </ul>
+        <h3>Sign up</h3>
+        <form method="post" name="registration_form" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+            <section>
+                <label for="username">Email</label>
+                <input type="text" name="username" id="username" placeholder="Joe" maxlength="50" required autofocus>
+                <span></span>
+            </section>
+            <section>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="name@email.com" maxlength="50" required>
+                <span></span>
+            </section>
+            <section>
+                <label for="new-password">Password</label>
+                <input type="password" name="new-password" id="new-password" placeholder="password" required>
+                <span></span>
+            </section>
+            <!-- TODO: Remove confirmation and use email instead -->
+            <section>
+                <label for="repeat-password">Email</label>
+                <input type="password" name="repeat-password" id="repeat-password" placeholder="password" required>
+                <span></span>
+            </section>
+            <section>
+                <button id="signup" onclick="return regformhash(this.form, this.form.username, this.form.email, this.form.password, this.form.repeat-password);">Sign up</button>
+            </section>
+        </form>
+        <p>Return to the <a href="index.php">login page</a>.</p>
     </body>
 </html>
