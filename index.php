@@ -56,10 +56,9 @@
                 <span></span>
             </section>
             <section>
-                <label for="current-password">Password</label>
+                <label style="display:inline;" for="current-password">Password</label><button style="display:inline;" id="toggle-password" type="button" aria-label="Show password as plain text. Warning: this will display your password on the screen.">Show password</button>
                 <input type="password" name="current-password" id="current-password" placeholder="password" maxlength="128" autocomplete="current-password" aria-describedby="password-constraints" required>
                 <span></span>
-                <button id="toggle-password" type="button" aria-label="Show password as plain text. Warning: this will display your password on the screen.">Show password</button>
                 <div id="password-constraints">A password with a length between 80 and 128 characters, with at least one lowercase and uppercase letter.</div>
                 </section>
             <section>
